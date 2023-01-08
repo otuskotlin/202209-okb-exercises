@@ -1,0 +1,26 @@
+###
+GET localhost:8080/hello
+
+###
+POST localhost:8080/cat/create
+Content-Type: application/json
+
+{
+  "name": "Marusya",
+  "colors": ["black"]
+}
+
+###
+POST localhost:8080/cat/create
+Content-Type: application/json
+
+{
+  "name": "Boris",
+  "colors": ["red", "white"]
+}
+
+###
+GET localhost:8080/cat/index?count=3
+
+###
+GET localhost:8080/cat/delete/5b93d656-1eb3-4c8e-bd60-d616575c4e68
